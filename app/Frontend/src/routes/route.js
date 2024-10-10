@@ -1,3 +1,5 @@
+import React from 'react'
+// import ReactDOM from 'react-dom'
 import { createBrowserRouter } from "react-router-dom";
 import WishList from "../pages/WishList/WishList";
 import Main from "../layouts/Main";

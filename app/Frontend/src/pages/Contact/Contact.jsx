@@ -1,26 +1,26 @@
-import React from "react";
-import PageBanner from "../../components/PageBanner";
-import bg_img from "../../assets/images/contact_imgae.jpg";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IoMdMailUnread } from "react-icons/io";
-import { HiBuildingOffice2 } from "react-icons/hi2";
+import React from 'react';
+import PageBanner from '../../components/PageBanner';
+import bg_img from '../../assets/images/contact_imgae.jpg';
+import {FaPhoneAlt} from 'react-icons/fa';
+import {IoMdMailUnread} from 'react-icons/io';
+import {HiBuildingOffice2} from 'react-icons/hi2';
 
-export default function Contact() {
+export default function Contact () {
   return (
     <div className="">
       <PageBanner bg_img={bg_img} title="Contact" />
       <div className="pt-16">
-        <div className="text-center mb-10">
-          <p className="text-center mb-3 font-semibold text-accent">
+        <div className="mb-10 text-center">
+          <p className="mb-3 font-semibold text-center text-accent">
             Contact Us
           </p>
           <h3 className="text-3xl font-bold ">Get In Touch</h3>
         </div>
 
         {/* First Section */}
-        <div className="flex justify-center px-5 flex-wrap gap-6">
-          <div className="card w-96 bg-base-200 text-center shadow-lg">
-            <div className="card-body items-center">
+        <div className="flex flex-wrap justify-center gap-6 px-5">
+          <div className="text-center shadow-lg card w-96 bg-base-200">
+            <div className="items-center card-body">
               <IoMdMailUnread className="text-3xl text-lime-500" />
               <h2 className="card-title">Email Adress</h2>
               <p className="leading-snug text-slate-500">
@@ -29,8 +29,8 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <div className="card w-96 bg-base-200 text-center shadow-lg">
-            <div className="card-body items-center">
+          <div className="text-center shadow-lg card w-96 bg-base-200">
+            <div className="items-center card-body">
               <FaPhoneAlt className="text-3xl text-red-500" />
               <h2 className="card-title">Phone Number</h2>
               <p className="leading-snug text-slate-500">
@@ -39,8 +39,8 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <div className="card w-96 bg-base-200 text-center shadow-lg">
-            <div className="card-body items-center">
+          <div className="text-center shadow-lg card w-96 bg-base-200">
+            <div className="items-center card-body">
               <HiBuildingOffice2 className="text-3xl text-amber-500" />
               <h2 className="card-title">Office Address</h2>
               <p className="leading-snug text-slate-500">
@@ -51,10 +51,10 @@ export default function Contact() {
         </div>
 
         {/* Second Section */}
-        <div className="flex py-24 flex-wrap gap-8 justify-center bg-slate-200 mt-16">
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="flex flex-wrap justify-center gap-8 py-24 mt-16 bg-slate-200">
+          <div className="flex-shrink-0 w-full max-w-sm shadow-2xl card bg-base-100">
             <div className="card-body">
-              <h3 className="text-center font-bold">What's on Your Mind</h3>
+              <h3 className="font-bold text-center">What's on Your Mind</h3>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -62,7 +62,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="email"
-                  className="input rounded-md input-bordered"
+                  className="rounded-md input input-bordered"
                 />
               </div>
               <div className="form-control">
@@ -72,7 +72,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="subject"
-                  className="input rounded-md input-bordered"
+                  className="rounded-md input input-bordered"
                 />
               </div>
               <div className="form-control">
@@ -83,10 +83,10 @@ export default function Contact() {
                   row={4}
                   type="text"
                   placeholder="message"
-                  className="textarea rounded-md resize-none input-bordered"
+                  className="rounded-md resize-none textarea input-bordered"
                 />
               </div>
-              <div className="form-control mt-6">
+              <div className="mt-6 form-control">
                 <button className="btn">Send</button>
               </div>
             </div>
@@ -94,14 +94,14 @@ export default function Contact() {
           <div className="">
             <iframe
               className="rounded-lg min-w-[400px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7302.4472076124885!2d90.41465880669234!3d23.775050597965045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79007cc6675%3A0x7df6b39febb764a3!2sSouth%20Badda%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1671354397088!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.5704017765777!2d16.41124991590548!3d48.17963077922839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da90f2f5c896f%3A0xd9e6fa0e87b03248!2sHaufgasse%206%2F5%2C%201110%20Wien%2C%20Austria!5e0!3m2!1sen!2sat!4v1671354397088!5m2!1sen!2sat"
               height="450"
-              title="badda"
-              style={{ border: 0 }}
+              title="haufgasse-6-5"
+              style={{border: 0}}
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            />
           </div>
         </div>
       </div>
